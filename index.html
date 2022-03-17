@@ -7,14 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Repasando fundamentos de HTML con el curso de @jonmircha en youtube" />
     <title>Fundamentos HTML</title>
-    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./media/html.png" />
+    <!-- ----- Es mejor tener css en archivo a parte pero se puede hacer de esta forma tambien ----- -->
+    <style>
+        body {
+            background-color: rgb(70, 70, 70);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Comentario -->
 
-    <h1>Fundamentos HTML</h1>
+    <h1 id="inicio">Fundamentos HTML</h1>
     <a
         href="https://www.youtube.com/watch?v=-oK6zL01fNM&list=PLvq-jIkSeTUZYcX9SYwVe7f66afwd9qk_&index=1&t=68s&ab_channel=jonmircha">
         Curso jonmircha
@@ -37,7 +48,7 @@
 
     <!-- --------------------------------- hr ---------------------------------- -->
     <hr />
-    <h2>Tags texto basicas</h2>
+    <h2>Etiquetas de texto basicas</h2>
     <p>
         Texto en:
         <b>negrita</b>
@@ -55,13 +66,13 @@
 
     <!-- --------------------------------- hr ---------------------------------- -->
     <hr />
-    <h2>Tags de saltos</h2>
+    <h2>Etiquetas de saltos</h2>
     <br>
     <hr />
 
     <!-- --------------------------------- hr ---------------------------------- -->
     <hr />
-    <h2>Tags de formateo</h2>
+    <h2>Etiquetas de formateo</h2>
     <pre>
         Texto pre formateado 
             respeta espaciados y saltos
@@ -80,8 +91,224 @@
     <section>section: seccion de contenido</section>
     <address>address: Representa una informacion de contacto</address>
 
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Etiquetas de bloque vs linea</h2>
+    <div style="background-color: rgb(0, 0, 0);">
+        Una etiqueta de bloque genera saltos de linea, ocupan todo el ancho
+        <span style="background-color: rgb(102, 50, 50);">Una etiqueta de linea solo ocupa el espacio necesario</span>
+    </div>
 
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2 style="color: aquamarine;">Estilos CSS en HTML </h2>
 
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Scrips en HTML</h2>
+    <script>
+        console.log("Repasando HTML")
+    </script>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Imagenes</h2>
+    <img src="./media/html.png" alt="logo html"> <br>
+    <img src="https://c.tenor.com/ORFDGs8GoukAAAAC/tierra-planeta.gif" alt="tierra-planeta gif" width="200px"
+        title="GIF">
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Vectores (SVG)</h2>
+    <!-- -------------------------- se puede agregar con la etiqueta img --------------------------- -->
+    <img src="./media/1294538687.svg" alt="coffe svg" width="100px">
+    <!-- -------------------- tambien se puede agregar directamente como codigo -------------------- -->
+    <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+        xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2"
+        viewBox="0 0 234.84373 245.56269" version="1.1" width="150px">
+        <title id="title4458">Coffee cup icon</title>
+        <g id="g4449" transform="translate(4.6328e-7 -19.844)">
+            <path id="path121"
+                d="m39.391 106.38c1.3181 29.368 9.6495 106.42 28.875 125.09h98.312c19.226-18.677 27.557-95.725 28.875-125.09h-78.031z"
+                fill-rule="evenodd" />
+            <path id="path123"
+                d="m-0.0000072581 239.41c5.9712 13.71 26.254 23.53 38.187 26h158.44c11.934-2.4624 32.248-12.285 38.219-26h-117.42z"
+                fill-rule="evenodd" />
+            <path id="path3102" style="block-progression:tb;color:#200;text-transform:none;text-indent:0"
+                d="m187.06 106.38c-26.51 0-48.216 21.706-48.216 48.216s21.706 48.216 48.216 48.216 48.216-21.706 48.216-48.216-21.706-48.216-48.216-48.216zm0 20.001c15.701 0 28.215 12.514 28.215 28.215s-12.514 28.215-28.215 28.215-28.215-12.514-28.215-28.215 12.514-28.215 28.215-28.215z" />
+            <g id="g4444" transform="matrix(1.9755 0 0 1.9755 -641.33 -2.8213)" stroke="#FFF" stroke-linecap="round"
+                stroke-width="4" fill="none">
+                <path id="path7593" d="m368.38 13.473c15.257 15.917-14.094 16.96 0 33.24" />
+                <path id="path7595" d="m385.4 13.473c15.257 15.917-14.094 16.96 0 33.24" />
+                <path id="path7597" d="m402.42 13.473c15.257 15.917-14.094 16.96 0 33.24" />
+            </g>
+        </g>
+        <metadata>
+            <rdf:RDF>
+                <cc:Work>
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+                    <dc:publisher>
+                        <cc:Agent rdf:about="http://openclipart.org/">
+                            <dc:title>Openclipart</dc:title>
+                        </cc:Agent>
+                    </dc:publisher>
+                    <dc:title>Coffee cup icon</dc:title>
+                    <dc:date>2011-01-09T02:04:47</dc:date>
+                    <dc:description>Coffee cup based on http://www.openclipart.org/detail/50557&#xD;\nCoffee smoke based
+                        on http://www.openclipart.org/detail/22305</dc:description>
+                    <dc:source>http://openclipart.org/detail/104185/coffee-cup-icon-by-crazyterabyte</dc:source>
+                    <dc:creator>
+                        <cc:Agent>
+                            <dc:title>CrazyTerabyte</dc:title>
+                        </cc:Agent>
+                    </dc:creator>
+                    <dc:subject>
+                        <rdf:Bag>
+                            <rdf:li>clip art</rdf:li>
+                            <rdf:li>clipart</rdf:li>
+                            <rdf:li>coffe</rdf:li>
+                            <rdf:li>cup</rdf:li>
+                            <rdf:li>drink</rdf:li>
+                            <rdf:li>tea</rdf:li>
+                        </rdf:Bag>
+                    </dc:subject>
+                </cc:Work>
+                <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+                    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+                </cc:License>
+            </rdf:RDF>
+        </metadata>
+    </svg>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Figuras</h2>
+    etiqueta semantica para poner una imagen y una description (figure y figcaption)
+    <figure>
+        <img src="./media/html.png" alt="html">
+        <figcaption>logo html</figcaption>
+    </figure>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Listas</h2>
+
+    <h4>Ordenadas</h4>
+    <ol>
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+    <ol start="50">
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+    <ol reversed>
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+    <ol type="A">
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+
+    <h4>Desordenadas</h4>
+    <ul type="square">
+        <li>Carbos</li>
+        <li>Prote</li>
+        <li>Grasas</li>
+    </ul>
+
+    <h4>Definicion</h4>
+    <dl>
+        <dt>html</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>css</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>js</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Enlaces y anclas</h2>
+    <a href="index.html#inicio">inicio</a>
+    <br>
+    <a href="./otro.html">Otro html</a>
+    <br>
+    <a href="https://jonmircha.com/cursos#frontend-designer" target="blanck">Curso</a>
+    <br>
+    <a href="tel:5493624208302">Celular</a>
+    <br>
+    <a href="mailto:julianrousseau31@gmail.com">Mail</a>
+    <br>
+    <a href="https://walink.co/0931a7">WhatsApp</a>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Elementos interactivos</h2>
+    <button onclick="alert('click')">boton</button>
+
+    <br>
+    <br>
+
+    <details>
+        <summary>Titulo del acordeon</summary>
+        <article>
+            <h4>contenido del acordeon</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima porro cum nemo explicabo excepturi
+                provident totam eum soluta vel sapiente voluptate dolor beatae, quia commodi ea inventore. Praesentium
+                officiis eveniet reiciendis quod rerum sunt facilis libero doloribus officia inventore? Assumenda
+                voluptatum doloribus corporis ipsam eligendi asperiores nihil nulla sapiente totam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad facilis, sunt similique consectetur
+                perferendis nisi aut eligendi iste, repudiandae vero sed! Voluptate saepe ducimus provident quis quidem
+                a perferendis culpa.</p>
+        </article>
+    </details>
+
+    <!-- ------------------- dialog es bastante nueva, aun no hay mucho soporte -------------------- -->
+    <dialog open>
+        esto es una ventana modal
+    </dialog>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Audio y Video</h2>
+    <!-- es necesario el atributo controls -->
+    <!-- otros atributos:
+    autoplay (ni bien se carga la pag arranca)
+    loop 
+    muted 
+    preload (por mas de que el usuario no le de pley se empieza a cargar, sirve cuando la conexion es lenta) -->
+    <audio src="./media/mari.mp3" controls>mari</audio>
+    <br>
+    <video src="./media/mari2.webm" controls width="300px"></video>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Iframes</h2>
+    <iframe width="800" height="450"
+        src="https://www.youtube.com/embed/-oK6zL01fNM?list=PLvq-jIkSeTUZYcX9SYwVe7f66afwd9qk_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <br>
+    <iframe src="./otro.html" frameborder="1"></iframe>
+    <br>
+    <iframe src="./media/emmet-cheat-sheet.pdf" frameborder="0" width="100%" height="500"></iframe>
 </body>
 
 </html>
