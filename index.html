@@ -7,7 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Repasando fundamentos de HTML con el curso de @jonmircha en youtube" />
     <title>Fundamentos HTML</title>
+    <!-- para el icono de la pag debe ser .png  -->
     <link rel="icon" type="image/png" href="./media/html.png" />
+    <!-- apple-touch-icon es para el favicon en mobile -->
+    <link rel="apple-touch-icon" href="./media/html.png">
+    <!-- esta metaetiqueta me permite cambiar el color de la barra de navegacion en mobile -->
+    <meta name="theme-color" content="#FF6600">
+
+    <!-- metaetiquetas para crear las cartas que aparecen cuando compartimos links en redes sociales -->
+    <meta property="og:title" content="Repasando HTML">
+    <meta property="og:description" content="En esta pagina repaso fundamentos de html">
+    <meta property="og:image" content="https://dominio-de-ejemplo.com/media/imagen">
+    <meta property="og:url" content="https://dominio-de-ejemplo.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="julianrousseau">
+
+
+
+
     <!-- ----- Es mejor tener css en archivo a parte pero se puede hacer de esta forma tambien ----- -->
     <style>
         body {
@@ -20,6 +37,7 @@
             color: white;
         }
     </style>
+    <link rel="canonical" href="">
 </head>
 
 <body>
@@ -309,6 +327,133 @@
     <iframe src="./otro.html" frameborder="1"></iframe>
     <br>
     <iframe src="./media/emmet-cheat-sheet.pdf" frameborder="0" width="100%" height="500"></iframe>
+
+    <!-- --------------------------------- hr ---------------------------------- -->
+    <hr />
+    <h2>Formularios</h2>
+    <h3>Elementos de Formularios</h3>
+
+    <p>text</p>
+    <input type="text">
+
+    <p>checkbox</p>
+    <input type="checkbox">
+
+    <p>radio</p>
+    <input type="radio">
+
+    <p>date</p>
+    <input type="date">
+
+    <p>color</p>
+    <input type="color">
+
+    <p>button</p>
+    <input type="button" value="boton">
+
+    <p>submit</p>
+    <input type="submit">
+
+    <p>reset</p>
+    <input type="reset">
+
+    <p>file</p>
+    <!-- atributo multiple para seleccionar varios archivos -->
+    <input type="file" multiple>
+
+    <p>hidden</p>
+    <input type="text" hidden>
+
+    <p>email</p>
+    <input type="email" name="email" id="email">
+
+    <p>tel</p>
+    <input type="tel" name="tel" id="tel">
+
+    <p>number</p>
+    <input type="number" name="number" id="number">
+
+    <p>password</p>
+    <input type="password" name="pass" id="pass">
+
+    <p>search</p>
+    <input type="search" name="search" id="search">
+
+    <p>textarea</p>
+    <textarea name="area" id="area" cols="30" rows="5"></textarea>
+
+    <p>select</p>
+    <select name="opciones" id="opciones">
+        <option value="JS">JS</option>
+        <option value="CSS">CSS</option>
+        <option value="HTML">HTML</option>
+        <option value="REACT">REACT</option>
+    </select>
+
+    <p>atributos disabled y readonly</p>
+    <input type="text" value="Julian Rousseau" disabled readonly>
+
+    <h3>form</h3>
+    <form action="https://www.google.com.ar/">
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" required pattern="^[A-Za-z]+$">
+        <br>
+        <input type="text" name="apellido" id="apellido" placeholder="apellido" required>
+        <br>
+        <label for="HTML">
+            HTML
+            <input type="checkbox" name="HTML" id="HTML" value="HTML" checked>
+        </label>
+        <label for="CSS">
+            CSS
+            <input type="checkbox" name="CSS" id="CSS" value="CSS">
+        </label>
+        <label for="JS">
+            JS
+            <input type="checkbox" name="JS" id="JS" value="JS">
+        </label>
+
+        <br>
+        <input type="radio" name="rojo" id="rojo" checked>
+        <label for="rojo">rojo</label>
+        <input type="radio" name="verde" id="verde">
+        <label for="verde">verde</label>
+        <input type="radio" name="azul" id="azul">
+        <label for="azul">azul</label>
+
+        <br>
+        <input type="reset">
+        <br>
+        <input type="submit">
+    </form>
+
+    </form>
+    <h4>Formulario de Contacto</h4>
+    <!-- https://formsubmit.co/ -->
+    <form action="https://formsubmit.co/julianrousseau31@gmail.com" method="post">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Nombre sólo acepta letras y espacios en blanco" required>
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            title="Formato de correo inválido" required>
+        <br>
+        <textarea name="comentarios" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+    role sirve para que el navegador pueda leer info a usuarios con discapacidades
+    <h2 role="title">Accesibilidad Web</h2>
+    <ul role="list">
+        <li tabindex="1" role="listitem">auto</li>
+        <li tabindex="2" role="listitem">moto</li>
+        <li tabindex="3" role="listitem">bici</li>
+        <li tabindex="4" role="listitem">avion</li>
+    </ul>
+    <a role="link" aria-label="en este enlace podes encontrar mas informacion sobre accesibilidad"
+        href="https://html5accessibility.com/">
+        informacion sobre accesibilidad
+    </a>
+
 </body>
 
 </html>
